@@ -2,7 +2,7 @@
 <a href=#2 id=2 data-nosnippet>2</a></span><span class="kw">async fn </span>Fn() -&gt; anyhow::Result&lt;()&gt; {
 <a href=#3 id=3 data-nosnippet>3</a>	tracing_subscriber::fmt::init();
 <a href=#4 id=4 data-nosnippet>4</a>
-<a href=#5 id=5 data-nosnippet>5</a>	<span class="kw">let </span>args: Vec&lt;String&gt; = std::env::args().collect();
+<a href=#5 id=5 data-nosnippet>5</a>	<span class="kw">let </span>args:Vec&lt;String&gt; = std::env::args().collect();
 <a href=#6 id=6 data-nosnippet>6</a>
 <a href=#7 id=7 data-nosnippet>7</a>	<span class="kw">if </span>args.len() != <span class="number">2 </span>{
 <a href=#8 id=8 data-nosnippet>8</a>		<span class="macro">error!</span>(<span class="string">"Usage: {} &lt;directory&gt;"</span>, args[<span class="number">0</span>]);
@@ -18,10 +18,10 @@
 <a href=#18 id=18 data-nosnippet>18</a>	};
 <a href=#19 id=19 data-nosnippet>19</a>
 <a href=#20 id=20 data-nosnippet>20</a>	<span class="kw">let </span>options = <span class="prelude-ty">Option </span>{
-<a href=#21 id=21 data-nosnippet>21</a>		entry: <span class="macro">vec!</span>[<span class="macro">vec!</span>[Path.to_string_lossy().to_string()]],
-<a href=#22 id=22 data-nosnippet>22</a>		separator: std::path::MAIN_SEPARATOR,
-<a href=#23 id=23 data-nosnippet>23</a>		pattern: <span class="string">".ts"</span>.to_string(),
-<a href=#24 id=24 data-nosnippet>24</a>		config: Config.clone(),
+<a href=#21 id=21 data-nosnippet>21</a>		entry:<span class="macro">vec!</span>[<span class="macro">vec!</span>[Path.to_string_lossy().to_string()]],
+<a href=#22 id=22 data-nosnippet>22</a>		separator:std::path::MAIN_SEPARATOR,
+<a href=#23 id=23 data-nosnippet>23</a>		pattern:<span class="string">".ts"</span>.to_string(),
+<a href=#24 id=24 data-nosnippet>24</a>		config:Config.clone(),
 <a href=#25 id=25 data-nosnippet>25</a>	};
 <a href=#26 id=26 data-nosnippet>26</a>
 <a href=#27 id=27 data-nosnippet>27</a>	<span class="comment">// Initial compilation
@@ -41,5 +41,6 @@
 <a href=#41 id=41 data-nosnippet>41</a>
 <a href=#42 id=42 data-nosnippet>42</a><span class="kw">use </span>tokio::fs;
 <a href=#43 id=43 data-nosnippet>43</a><span class="kw">use </span>tracing::{error, info};
-<a href=#44 id=44 data-nosnippet>44</a><span class="kw">use </span><span class="kw">crate</span>::Struct::SWC::{CompilerConfig, <span class="prelude-ty">Option</span>};
+<a href=#44 id=44 data-nosnippet>44</a>
+<a href=#45 id=45 data-nosnippet>45</a><span class="kw">use </span><span class="kw">crate</span>::Struct::SWC::{CompilerConfig, <span class="prelude-ty">Option</span>};
 </code></pre></div></section></main></body></html>
