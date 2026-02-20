@@ -1,1 +1,1 @@
-window.SIDEBAR_ITEMS = {"mod":["Watch"]};
+window.SIDEBAR_ITEMS = {"fn":["Fn"],"mod":["Watch"]};

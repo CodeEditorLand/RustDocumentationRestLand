@@ -38,7 +38,7 @@
 <a href=#38 id=38 data-nosnippet>38</a>///
 <a href=#39 id=39 data-nosnippet>39</a>/// This function will log errors if it fails to generate summaries or send
 <a href=#40 id=40 data-nosnippet>40</a>/// results.
-<a href=#41 id=41 data-nosnippet>41</a></span><span class="kw">pub async fn </span>Fn(<span class="prelude-ty">Option </span>{ Entry, Pattern, Separator, .. }:<span class="prelude-ty">Option</span>) {
+<a href=#41 id=41 data-nosnippet>41</a></span><span class="kw">pub async fn </span><a href="../../../../../Library/Fn/Binary/Command/Sequential/fn.Fn.html">Fn</a>(<span class="prelude-ty">Option </span>{ Entry, Pattern, Separator, .. }:<a class="prelude-ty" href="../../../Struct/Binary/Command/Entry.rs.html#6-19">Option</a>) {
 <a href=#42 id=42 data-nosnippet>42</a>	<span class="kw">let </span>Queue = futures::future::join_all(
 <a href=#43 id=43 data-nosnippet>43</a>		Entry
 <a href=#44 id=44 data-nosnippet>44</a>			.into_iter()
@@ -63,5 +63,5 @@
 <a href=#63 id=63 data-nosnippet>63</a>	<span class="kw">crate</span>::Fn::Build::Group::Fn(Queue.into_iter().filter_map(Result::ok).collect::&lt;Vec&lt;<span class="kw">_</span>&gt;&gt;());
 <a href=#64 id=64 data-nosnippet>64</a>}
 <a href=#65 id=65 data-nosnippet>65</a>
-<a href=#66 id=66 data-nosnippet>66</a><span class="kw">use </span><span class="kw">crate</span>::Struct::Binary::Command::Entry::Struct <span class="kw">as </span><span class="prelude-ty">Option</span>;
+<a href=#66 id=66 data-nosnippet>66</a><span class="kw">use </span><a href="../../../Struct/Binary/Command/Entry.rs.html#6-19"><span class="kw">crate</span>::Struct::Binary::Command::Entry::Struct</a> <span class="kw">as </span><span class="prelude-ty">Option</span>;
 </code></pre></div></section></main></body></html>

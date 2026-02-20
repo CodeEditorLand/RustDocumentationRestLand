@@ -38,7 +38,7 @@
 <a href=#38 id=38 data-nosnippet>38</a>///
 <a href=#39 id=39 data-nosnippet>39</a>/// This function will log errors if it fails to generate summaries or send
 <a href=#40 id=40 data-nosnippet>40</a>/// results.
-<a href=#41 id=41 data-nosnippet>41</a></span><span class="kw">pub async fn </span>Fn(<span class="prelude-ty">Option </span>{ Entry, Separator, Pattern, .. }:<span class="prelude-ty">Option</span>) {
+<a href=#41 id=41 data-nosnippet>41</a></span><span class="kw">pub async fn </span><a href="../../../../../Library/Fn/Binary/Command/Parallel/fn.Fn.html">Fn</a>(<span class="prelude-ty">Option </span>{ Entry, Separator, Pattern, .. }:<a class="prelude-ty" href="../../../Struct/Binary/Command/Entry.rs.html#6-19">Option</a>) {
 <a href=#42 id=42 data-nosnippet>42</a>	<span class="kw">let </span>(Allow, <span class="kw-2">mut </span>Mark) = tokio::sync::mpsc::unbounded_channel();
 <a href=#43 id=43 data-nosnippet>43</a>
 <a href=#44 id=44 data-nosnippet>44</a>	<span class="kw">let </span>Queue = futures::stream::FuturesUnordered::new();
@@ -91,5 +91,5 @@
 <a href=#91 id=91 data-nosnippet>91</a><span class="kw">use </span>futures::stream::StreamExt;
 <a href=#92 id=92 data-nosnippet>92</a><span class="kw">use </span>rayon::iter::{IntoParallelIterator, ParallelIterator};
 <a href=#93 id=93 data-nosnippet>93</a>
-<a href=#94 id=94 data-nosnippet>94</a><span class="kw">use </span><span class="kw">crate</span>::Struct::Binary::Command::Entry::Struct <span class="kw">as </span><span class="prelude-ty">Option</span>;
+<a href=#94 id=94 data-nosnippet>94</a><span class="kw">use </span><a href="../../../Struct/Binary/Command/Entry.rs.html#6-19"><span class="kw">crate</span>::Struct::Binary::Command::Entry::Struct</a> <span class="kw">as </span><span class="prelude-ty">Option</span>;
 </code></pre></div></section></main></body></html>
