@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"enum":["BundleMode"],"mod":["builder","config","esbuild"],"struct":["BundleEntry","BundleResult"]};

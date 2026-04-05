@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"fn":["transform"],"static":["TRANSFORM_COUNT"],"struct":["TransformerConfig"]};
