@@ -1,9 +1,0 @@
-(function() {
-    const implementors = Object.fromEntries([["Library",[["impl&lt;'de&gt; <a class=\"trait\" href=\"https://docs.rs/serde_core/1.0.228/serde_core/de/trait.Deserialize.html\" title=\"trait serde_core::de::Deserialize\">Deserialize</a>&lt;'de&gt; for <a class=\"struct\" href=\"Library/Struct/SWC/struct.CompilerConfig.html\" title=\"struct Library::Struct::SWC::CompilerConfig\">CompilerConfig</a>",0],["impl&lt;'de&gt; <a class=\"trait\" href=\"https://docs.rs/serde_core/1.0.228/serde_core/de/trait.Deserialize.html\" title=\"trait serde_core::de::Deserialize\">Deserialize</a>&lt;'de&gt; for <a class=\"struct\" href=\"Library/Struct/SWC/struct.FileInfo.html\" title=\"struct Library::Struct::SWC::FileInfo\">FileInfo</a>",0]]],["Rest",[["impl&lt;'de&gt; <a class=\"trait\" href=\"https://docs.rs/serde_core/1.0.228/serde_core/de/trait.Deserialize.html\" title=\"trait serde_core::de::Deserialize\">Deserialize</a>&lt;'de&gt; for <a class=\"struct\" href=\"Rest/Struct/SWC/struct.CompilerConfig.html\" title=\"struct Rest::Struct::SWC::CompilerConfig\">CompilerConfig</a>",0],["impl&lt;'de&gt; <a class=\"trait\" href=\"https://docs.rs/serde_core/1.0.228/serde_core/de/trait.Deserialize.html\" title=\"trait serde_core::de::Deserialize\">Deserialize</a>&lt;'de&gt; for <a class=\"struct\" href=\"Rest/Struct/SWC/struct.FileInfo.html\" title=\"struct Rest::Struct::SWC::FileInfo\">FileInfo</a>",0]]]]);
-    if (window.register_implementors) {
-        window.register_implementors(implementors);
-    } else {
-        window.pending_implementors = implementors;
-    }
-})()
-//{"start":59,"fragment_lengths":[685,671]}
