@@ -1,1 +1,5 @@
-window.SIDEBAR_ITEMS = {"fn":["codegen","transform_static_class_properties","write_output"],"static":["CODEGEN_COUNT"],"struct":["CodegenConfig","CodegenResult"]};
+window.SIDEBAR_ITEMS = {
+	"fn": ["codegen", "transform_static_class_properties", "write_output"],
+	"static": ["CODEGEN_COUNT"],
+	"struct": ["CodegenConfig", "CodegenResult"],
+};

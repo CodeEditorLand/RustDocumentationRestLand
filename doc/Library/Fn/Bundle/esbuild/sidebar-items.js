@@ -1,1 +1,4 @@
-window.SIDEBAR_ITEMS = {"fn":["check_esbuild","install_esbuild"],"struct":["EsbuildWrapper"]};
+window.SIDEBAR_ITEMS = {
+	"fn": ["check_esbuild", "install_esbuild"],
+	"struct": ["EsbuildWrapper"],
+};

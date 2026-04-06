@@ -1,1 +1,4 @@
-window.SIDEBAR_ITEMS = {"struct":["Struct"],"type":["Command","Parallel","Pattern","Separator"]};
+window.SIDEBAR_ITEMS = {
+	"struct": ["Struct"],
+	"type": ["Command", "Parallel", "Pattern", "Separator"],
+};

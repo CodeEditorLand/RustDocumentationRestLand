@@ -1,1 +1,1 @@
-window.SIDEBAR_ITEMS = {"fn":["Fn"],"mod":["Compile"]};
+window.SIDEBAR_ITEMS = { "fn": ["Fn"], "mod": ["Compile"] };

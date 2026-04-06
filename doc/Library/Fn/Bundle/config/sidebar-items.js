@@ -1,1 +1,1 @@
-window.SIDEBAR_ITEMS = {"struct":["BundleConfig"]};
+window.SIDEBAR_ITEMS = { "struct": ["BundleConfig"] };

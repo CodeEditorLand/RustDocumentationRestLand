@@ -1,1 +1,1 @@
-window.SIDEBAR_ITEMS = {"mod":["Entry","Option"],"struct":["Struct"]};
+window.SIDEBAR_ITEMS = { "mod": ["Entry", "Option"], "struct": ["Struct"] };

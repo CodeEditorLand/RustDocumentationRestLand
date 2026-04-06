@@ -1,9 +1,52 @@
-(function() {
-    const implementors = Object.fromEntries([["Library",[["impl <a class=\"trait\" href=\"https://doc.rust-lang.org/nightly/core/marker/trait.Copy.html\" title=\"trait core::marker::Copy\">Copy</a> for <a class=\"enum\" href=\"Library/Fn/Bundle/enum.BundleMode.html\" title=\"enum Library::Fn::Bundle::BundleMode\">BundleMode</a>",0],["impl <a class=\"trait\" href=\"https://doc.rust-lang.org/nightly/core/marker/trait.Copy.html\" title=\"trait core::marker::Copy\">Copy</a> for <a class=\"enum\" href=\"Library/Fn/Worker/enum.WorkerType.html\" title=\"enum Library::Fn::Worker::WorkerType\">WorkerType</a>",0],["impl <a class=\"trait\" href=\"https://doc.rust-lang.org/nightly/core/marker/trait.Copy.html\" title=\"trait core::marker::Copy\">Copy</a> for <a class=\"enum\" href=\"Library/Struct/CompilerConfig/enum.CompilationMode.html\" title=\"enum Library::Struct::CompilerConfig::CompilationMode\">CompilationMode</a>",0],["impl <a class=\"trait\" href=\"https://doc.rust-lang.org/nightly/core/marker/trait.Copy.html\" title=\"trait core::marker::Copy\">Copy</a> for <a class=\"enum\" href=\"Library/Struct/SWC/enum.ModuleFormat.html\" title=\"enum Library::Struct::SWC::ModuleFormat\">ModuleFormat</a>",0]]],["Rest",[["impl <a class=\"trait\" href=\"https://doc.rust-lang.org/nightly/core/marker/trait.Copy.html\" title=\"trait core::marker::Copy\">Copy</a> for <a class=\"enum\" href=\"Rest/Fn/Bundle/enum.BundleMode.html\" title=\"enum Rest::Fn::Bundle::BundleMode\">BundleMode</a>",0],["impl <a class=\"trait\" href=\"https://doc.rust-lang.org/nightly/core/marker/trait.Copy.html\" title=\"trait core::marker::Copy\">Copy</a> for <a class=\"enum\" href=\"Rest/Fn/Worker/enum.WorkerType.html\" title=\"enum Rest::Fn::Worker::WorkerType\">WorkerType</a>",0],["impl <a class=\"trait\" href=\"https://doc.rust-lang.org/nightly/core/marker/trait.Copy.html\" title=\"trait core::marker::Copy\">Copy</a> for <a class=\"enum\" href=\"Rest/Struct/CompilerConfig/enum.CompilationMode.html\" title=\"enum Rest::Struct::CompilerConfig::CompilationMode\">CompilationMode</a>",0],["impl <a class=\"trait\" href=\"https://doc.rust-lang.org/nightly/core/marker/trait.Copy.html\" title=\"trait core::marker::Copy\">Copy</a> for <a class=\"enum\" href=\"Rest/Struct/SWC/enum.ModuleFormat.html\" title=\"enum Rest::Struct::SWC::ModuleFormat\">ModuleFormat</a>",0]]]]);
-    if (window.register_implementors) {
-        window.register_implementors(implementors);
-    } else {
-        window.pending_implementors = implementors;
-    }
-})()
+(function () {
+	const implementors = Object.fromEntries([
+		[
+			"Library",
+			[
+				[
+					'impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/marker/trait.Copy.html" title="trait core::marker::Copy">Copy</a> for <a class="enum" href="Library/Fn/Bundle/enum.BundleMode.html" title="enum Library::Fn::Bundle::BundleMode">BundleMode</a>',
+					0,
+				],
+				[
+					'impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/marker/trait.Copy.html" title="trait core::marker::Copy">Copy</a> for <a class="enum" href="Library/Fn/Worker/enum.WorkerType.html" title="enum Library::Fn::Worker::WorkerType">WorkerType</a>',
+					0,
+				],
+				[
+					'impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/marker/trait.Copy.html" title="trait core::marker::Copy">Copy</a> for <a class="enum" href="Library/Struct/CompilerConfig/enum.CompilationMode.html" title="enum Library::Struct::CompilerConfig::CompilationMode">CompilationMode</a>',
+					0,
+				],
+				[
+					'impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/marker/trait.Copy.html" title="trait core::marker::Copy">Copy</a> for <a class="enum" href="Library/Struct/SWC/enum.ModuleFormat.html" title="enum Library::Struct::SWC::ModuleFormat">ModuleFormat</a>',
+					0,
+				],
+			],
+		],
+		[
+			"Rest",
+			[
+				[
+					'impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/marker/trait.Copy.html" title="trait core::marker::Copy">Copy</a> for <a class="enum" href="Rest/Fn/Bundle/enum.BundleMode.html" title="enum Rest::Fn::Bundle::BundleMode">BundleMode</a>',
+					0,
+				],
+				[
+					'impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/marker/trait.Copy.html" title="trait core::marker::Copy">Copy</a> for <a class="enum" href="Rest/Fn/Worker/enum.WorkerType.html" title="enum Rest::Fn::Worker::WorkerType">WorkerType</a>',
+					0,
+				],
+				[
+					'impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/marker/trait.Copy.html" title="trait core::marker::Copy">Copy</a> for <a class="enum" href="Rest/Struct/CompilerConfig/enum.CompilationMode.html" title="enum Rest::Struct::CompilerConfig::CompilationMode">CompilationMode</a>',
+					0,
+				],
+				[
+					'impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/marker/trait.Copy.html" title="trait core::marker::Copy">Copy</a> for <a class="enum" href="Rest/Struct/SWC/enum.ModuleFormat.html" title="enum Rest::Struct::SWC::ModuleFormat">ModuleFormat</a>',
+					0,
+				],
+			],
+		],
+	]);
+	if (window.register_implementors) {
+		window.register_implementors(implementors);
+	} else {
+		window.pending_implementors = implementors;
+	}
+})();
 //{"start":59,"fragment_lengths":[1168,1142]}

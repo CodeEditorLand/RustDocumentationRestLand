@@ -1,1 +1,1 @@
-window.SIDEBAR_ITEMS = {"struct":["WorkerDetector"]};
+window.SIDEBAR_ITEMS = { "struct": ["WorkerDetector"] };

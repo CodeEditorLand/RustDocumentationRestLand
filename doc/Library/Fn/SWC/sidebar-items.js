@@ -1,1 +1,1 @@
-window.SIDEBAR_ITEMS = {"mod":["Compile","Watch"]};
+window.SIDEBAR_ITEMS = { "mod": ["Compile", "Watch"] };

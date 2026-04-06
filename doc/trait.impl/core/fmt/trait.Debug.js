@@ -1,9 +1,196 @@
-(function() {
-    const implementors = Object.fromEntries([["Library",[["impl <a class=\"trait\" href=\"https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html\" title=\"trait core::fmt::Debug\">Debug</a> for <a class=\"enum\" href=\"Library/Fn/Bundle/enum.BundleMode.html\" title=\"enum Library::Fn::Bundle::BundleMode\">BundleMode</a>",0],["impl <a class=\"trait\" href=\"https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html\" title=\"trait core::fmt::Debug\">Debug</a> for <a class=\"enum\" href=\"Library/Fn/Worker/enum.WorkerType.html\" title=\"enum Library::Fn::Worker::WorkerType\">WorkerType</a>",0],["impl <a class=\"trait\" href=\"https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html\" title=\"trait core::fmt::Debug\">Debug</a> for <a class=\"enum\" href=\"Library/Struct/CompilerConfig/enum.CompilationMode.html\" title=\"enum Library::Struct::CompilerConfig::CompilationMode\">CompilationMode</a>",0],["impl <a class=\"trait\" href=\"https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html\" title=\"trait core::fmt::Debug\">Debug</a> for <a class=\"enum\" href=\"Library/Struct/SWC/enum.ModuleFormat.html\" title=\"enum Library::Struct::SWC::ModuleFormat\">ModuleFormat</a>",0],["impl <a class=\"trait\" href=\"https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html\" title=\"trait core::fmt::Debug\">Debug</a> for <a class=\"struct\" href=\"Library/Fn/Bundle/config/struct.BundleConfig.html\" title=\"struct Library::Fn::Bundle::config::BundleConfig\">BundleConfig</a>",0],["impl <a class=\"trait\" href=\"https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html\" title=\"trait core::fmt::Debug\">Debug</a> for <a class=\"struct\" href=\"Library/Fn/Bundle/struct.BundleEntry.html\" title=\"struct Library::Fn::Bundle::BundleEntry\">BundleEntry</a>",0],["impl <a class=\"trait\" href=\"https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html\" title=\"trait core::fmt::Debug\">Debug</a> for <a class=\"struct\" href=\"Library/Fn/Bundle/struct.BundleResult.html\" title=\"struct Library::Fn::Bundle::BundleResult\">BundleResult</a>",0],["impl <a class=\"trait\" href=\"https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html\" title=\"trait core::fmt::Debug\">Debug</a> for <a class=\"struct\" href=\"Library/Fn/NLS/struct.LocalizationBundle.html\" title=\"struct Library::Fn::NLS::LocalizationBundle\">LocalizationBundle</a>",0],["impl <a class=\"trait\" href=\"https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html\" title=\"trait core::fmt::Debug\">Debug</a> for <a class=\"struct\" href=\"Library/Fn/NLS/struct.LocalizationEntry.html\" title=\"struct Library::Fn::NLS::LocalizationEntry\">LocalizationEntry</a>",0],["impl <a class=\"trait\" href=\"https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html\" title=\"trait core::fmt::Debug\">Debug</a> for <a class=\"struct\" href=\"Library/Fn/NLS/struct.NLSConfig.html\" title=\"struct Library::Fn::NLS::NLSConfig\">NLSConfig</a>",0],["impl <a class=\"trait\" href=\"https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html\" title=\"trait core::fmt::Debug\">Debug</a> for <a class=\"struct\" href=\"Library/Fn/OXC/Codegen/struct.CodegenConfig.html\" title=\"struct Library::Fn::OXC::Codegen::CodegenConfig\">CodegenConfig</a>",0],["impl <a class=\"trait\" href=\"https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html\" title=\"trait core::fmt::Debug\">Debug</a> for <a class=\"struct\" href=\"Library/Fn/OXC/Compiler/struct.CompilerMetrics.html\" title=\"struct Library::Fn::OXC::Compiler::CompilerMetrics\">CompilerMetrics</a>",0],["impl <a class=\"trait\" href=\"https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html\" title=\"trait core::fmt::Debug\">Debug</a> for <a class=\"struct\" href=\"Library/Fn/OXC/Parser/struct.ParserConfig.html\" title=\"struct Library::Fn::OXC::Parser::ParserConfig\">ParserConfig</a>",0],["impl <a class=\"trait\" href=\"https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html\" title=\"trait core::fmt::Debug\">Debug</a> for <a class=\"struct\" href=\"Library/Fn/OXC/Transformer/struct.TransformerConfig.html\" title=\"struct Library::Fn::OXC::Transformer::TransformerConfig\">TransformerConfig</a>",0],["impl <a class=\"trait\" href=\"https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html\" title=\"trait core::fmt::Debug\">Debug</a> for <a class=\"struct\" href=\"Library/Fn/Transform/private_field/struct.Config.html\" title=\"struct Library::Fn::Transform::private_field::Config\">Config</a>",0],["impl <a class=\"trait\" href=\"https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html\" title=\"trait core::fmt::Debug\">Debug</a> for <a class=\"struct\" href=\"Library/Fn/Worker/struct.WorkerConfig.html\" title=\"struct Library::Fn::Worker::WorkerConfig\">WorkerConfig</a>",0],["impl <a class=\"trait\" href=\"https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html\" title=\"trait core::fmt::Debug\">Debug</a> for <a class=\"struct\" href=\"Library/Fn/Worker/struct.WorkerInfo.html\" title=\"struct Library::Fn::Worker::WorkerInfo\">WorkerInfo</a>",0],["impl <a class=\"trait\" href=\"https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html\" title=\"trait core::fmt::Debug\">Debug</a> for <a class=\"struct\" href=\"Library/Struct/CompilerConfig/struct.CompilerConfig.html\" title=\"struct Library::Struct::CompilerConfig::CompilerConfig\">CompilerConfig</a>",0],["impl <a class=\"trait\" href=\"https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html\" title=\"trait core::fmt::Debug\">Debug</a> for <a class=\"struct\" href=\"Library/Struct/SWC/struct.CompilerConfig.html\" title=\"struct Library::Struct::SWC::CompilerConfig\">CompilerConfig</a>",0],["impl <a class=\"trait\" href=\"https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html\" title=\"trait core::fmt::Debug\">Debug</a> for <a class=\"struct\" href=\"Library/Struct/SWC/struct.CompilerMetrics.html\" title=\"struct Library::Struct::SWC::CompilerMetrics\">CompilerMetrics</a>",0],["impl <a class=\"trait\" href=\"https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html\" title=\"trait core::fmt::Debug\">Debug</a> for <a class=\"struct\" href=\"Library/Struct/SWC/struct.FileInfo.html\" title=\"struct Library::Struct::SWC::FileInfo\">FileInfo</a>",0],["impl <a class=\"trait\" href=\"https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html\" title=\"trait core::fmt::Debug\">Debug</a> for <a class=\"struct\" href=\"Library/Struct/SWC/struct.Option.html\" title=\"struct Library::Struct::SWC::Option\">Option</a>",0]]],["Rest",[["impl <a class=\"trait\" href=\"https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html\" title=\"trait core::fmt::Debug\">Debug</a> for <a class=\"enum\" href=\"Rest/Fn/Bundle/enum.BundleMode.html\" title=\"enum Rest::Fn::Bundle::BundleMode\">BundleMode</a>",0],["impl <a class=\"trait\" href=\"https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html\" title=\"trait core::fmt::Debug\">Debug</a> for <a class=\"enum\" href=\"Rest/Fn/Worker/enum.WorkerType.html\" title=\"enum Rest::Fn::Worker::WorkerType\">WorkerType</a>",0],["impl <a class=\"trait\" href=\"https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html\" title=\"trait core::fmt::Debug\">Debug</a> for <a class=\"enum\" href=\"Rest/Struct/CompilerConfig/enum.CompilationMode.html\" title=\"enum Rest::Struct::CompilerConfig::CompilationMode\">CompilationMode</a>",0],["impl <a class=\"trait\" href=\"https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html\" title=\"trait core::fmt::Debug\">Debug</a> for <a class=\"enum\" href=\"Rest/Struct/SWC/enum.ModuleFormat.html\" title=\"enum Rest::Struct::SWC::ModuleFormat\">ModuleFormat</a>",0],["impl <a class=\"trait\" href=\"https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html\" title=\"trait core::fmt::Debug\">Debug</a> for <a class=\"struct\" href=\"Rest/Fn/Bundle/config/struct.BundleConfig.html\" title=\"struct Rest::Fn::Bundle::config::BundleConfig\">BundleConfig</a>",0],["impl <a class=\"trait\" href=\"https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html\" title=\"trait core::fmt::Debug\">Debug</a> for <a class=\"struct\" href=\"Rest/Fn/Bundle/struct.BundleEntry.html\" title=\"struct Rest::Fn::Bundle::BundleEntry\">BundleEntry</a>",0],["impl <a class=\"trait\" href=\"https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html\" title=\"trait core::fmt::Debug\">Debug</a> for <a class=\"struct\" href=\"Rest/Fn/Bundle/struct.BundleResult.html\" title=\"struct Rest::Fn::Bundle::BundleResult\">BundleResult</a>",0],["impl <a class=\"trait\" href=\"https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html\" title=\"trait core::fmt::Debug\">Debug</a> for <a class=\"struct\" href=\"Rest/Fn/NLS/struct.LocalizationBundle.html\" title=\"struct Rest::Fn::NLS::LocalizationBundle\">LocalizationBundle</a>",0],["impl <a class=\"trait\" href=\"https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html\" title=\"trait core::fmt::Debug\">Debug</a> for <a class=\"struct\" href=\"Rest/Fn/NLS/struct.LocalizationEntry.html\" title=\"struct Rest::Fn::NLS::LocalizationEntry\">LocalizationEntry</a>",0],["impl <a class=\"trait\" href=\"https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html\" title=\"trait core::fmt::Debug\">Debug</a> for <a class=\"struct\" href=\"Rest/Fn/NLS/struct.NLSConfig.html\" title=\"struct Rest::Fn::NLS::NLSConfig\">NLSConfig</a>",0],["impl <a class=\"trait\" href=\"https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html\" title=\"trait core::fmt::Debug\">Debug</a> for <a class=\"struct\" href=\"Rest/Fn/OXC/Codegen/struct.CodegenConfig.html\" title=\"struct Rest::Fn::OXC::Codegen::CodegenConfig\">CodegenConfig</a>",0],["impl <a class=\"trait\" href=\"https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html\" title=\"trait core::fmt::Debug\">Debug</a> for <a class=\"struct\" href=\"Rest/Fn/OXC/Compiler/struct.CompilerMetrics.html\" title=\"struct Rest::Fn::OXC::Compiler::CompilerMetrics\">CompilerMetrics</a>",0],["impl <a class=\"trait\" href=\"https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html\" title=\"trait core::fmt::Debug\">Debug</a> for <a class=\"struct\" href=\"Rest/Fn/OXC/Parser/struct.ParserConfig.html\" title=\"struct Rest::Fn::OXC::Parser::ParserConfig\">ParserConfig</a>",0],["impl <a class=\"trait\" href=\"https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html\" title=\"trait core::fmt::Debug\">Debug</a> for <a class=\"struct\" href=\"Rest/Fn/OXC/Transformer/struct.TransformerConfig.html\" title=\"struct Rest::Fn::OXC::Transformer::TransformerConfig\">TransformerConfig</a>",0],["impl <a class=\"trait\" href=\"https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html\" title=\"trait core::fmt::Debug\">Debug</a> for <a class=\"struct\" href=\"Rest/Fn/Transform/private_field/struct.Config.html\" title=\"struct Rest::Fn::Transform::private_field::Config\">Config</a>",0],["impl <a class=\"trait\" href=\"https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html\" title=\"trait core::fmt::Debug\">Debug</a> for <a class=\"struct\" href=\"Rest/Fn/Worker/struct.WorkerConfig.html\" title=\"struct Rest::Fn::Worker::WorkerConfig\">WorkerConfig</a>",0],["impl <a class=\"trait\" href=\"https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html\" title=\"trait core::fmt::Debug\">Debug</a> for <a class=\"struct\" href=\"Rest/Fn/Worker/struct.WorkerInfo.html\" title=\"struct Rest::Fn::Worker::WorkerInfo\">WorkerInfo</a>",0],["impl <a class=\"trait\" href=\"https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html\" title=\"trait core::fmt::Debug\">Debug</a> for <a class=\"struct\" href=\"Rest/Struct/CompilerConfig/struct.CompilerConfig.html\" title=\"struct Rest::Struct::CompilerConfig::CompilerConfig\">CompilerConfig</a>",0],["impl <a class=\"trait\" href=\"https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html\" title=\"trait core::fmt::Debug\">Debug</a> for <a class=\"struct\" href=\"Rest/Struct/SWC/struct.CompilerConfig.html\" title=\"struct Rest::Struct::SWC::CompilerConfig\">CompilerConfig</a>",0],["impl <a class=\"trait\" href=\"https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html\" title=\"trait core::fmt::Debug\">Debug</a> for <a class=\"struct\" href=\"Rest/Struct/SWC/struct.CompilerMetrics.html\" title=\"struct Rest::Struct::SWC::CompilerMetrics\">CompilerMetrics</a>",0],["impl <a class=\"trait\" href=\"https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html\" title=\"trait core::fmt::Debug\">Debug</a> for <a class=\"struct\" href=\"Rest/Struct/SWC/struct.FileInfo.html\" title=\"struct Rest::Struct::SWC::FileInfo\">FileInfo</a>",0],["impl <a class=\"trait\" href=\"https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html\" title=\"trait core::fmt::Debug\">Debug</a> for <a class=\"struct\" href=\"Rest/Struct/SWC/struct.Option.html\" title=\"struct Rest::Struct::SWC::Option\">Option</a>",0]]]]);
-    if (window.register_implementors) {
-        window.register_implementors(implementors);
-    } else {
-        window.pending_implementors = implementors;
-    }
-})()
+(function () {
+	const implementors = Object.fromEntries([
+		[
+			"Library",
+			[
+				[
+					'impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html" title="trait core::fmt::Debug">Debug</a> for <a class="enum" href="Library/Fn/Bundle/enum.BundleMode.html" title="enum Library::Fn::Bundle::BundleMode">BundleMode</a>',
+					0,
+				],
+				[
+					'impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html" title="trait core::fmt::Debug">Debug</a> for <a class="enum" href="Library/Fn/Worker/enum.WorkerType.html" title="enum Library::Fn::Worker::WorkerType">WorkerType</a>',
+					0,
+				],
+				[
+					'impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html" title="trait core::fmt::Debug">Debug</a> for <a class="enum" href="Library/Struct/CompilerConfig/enum.CompilationMode.html" title="enum Library::Struct::CompilerConfig::CompilationMode">CompilationMode</a>',
+					0,
+				],
+				[
+					'impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html" title="trait core::fmt::Debug">Debug</a> for <a class="enum" href="Library/Struct/SWC/enum.ModuleFormat.html" title="enum Library::Struct::SWC::ModuleFormat">ModuleFormat</a>',
+					0,
+				],
+				[
+					'impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html" title="trait core::fmt::Debug">Debug</a> for <a class="struct" href="Library/Fn/Bundle/config/struct.BundleConfig.html" title="struct Library::Fn::Bundle::config::BundleConfig">BundleConfig</a>',
+					0,
+				],
+				[
+					'impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html" title="trait core::fmt::Debug">Debug</a> for <a class="struct" href="Library/Fn/Bundle/struct.BundleEntry.html" title="struct Library::Fn::Bundle::BundleEntry">BundleEntry</a>',
+					0,
+				],
+				[
+					'impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html" title="trait core::fmt::Debug">Debug</a> for <a class="struct" href="Library/Fn/Bundle/struct.BundleResult.html" title="struct Library::Fn::Bundle::BundleResult">BundleResult</a>',
+					0,
+				],
+				[
+					'impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html" title="trait core::fmt::Debug">Debug</a> for <a class="struct" href="Library/Fn/NLS/struct.LocalizationBundle.html" title="struct Library::Fn::NLS::LocalizationBundle">LocalizationBundle</a>',
+					0,
+				],
+				[
+					'impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html" title="trait core::fmt::Debug">Debug</a> for <a class="struct" href="Library/Fn/NLS/struct.LocalizationEntry.html" title="struct Library::Fn::NLS::LocalizationEntry">LocalizationEntry</a>',
+					0,
+				],
+				[
+					'impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html" title="trait core::fmt::Debug">Debug</a> for <a class="struct" href="Library/Fn/NLS/struct.NLSConfig.html" title="struct Library::Fn::NLS::NLSConfig">NLSConfig</a>',
+					0,
+				],
+				[
+					'impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html" title="trait core::fmt::Debug">Debug</a> for <a class="struct" href="Library/Fn/OXC/Codegen/struct.CodegenConfig.html" title="struct Library::Fn::OXC::Codegen::CodegenConfig">CodegenConfig</a>',
+					0,
+				],
+				[
+					'impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html" title="trait core::fmt::Debug">Debug</a> for <a class="struct" href="Library/Fn/OXC/Compiler/struct.CompilerMetrics.html" title="struct Library::Fn::OXC::Compiler::CompilerMetrics">CompilerMetrics</a>',
+					0,
+				],
+				[
+					'impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html" title="trait core::fmt::Debug">Debug</a> for <a class="struct" href="Library/Fn/OXC/Parser/struct.ParserConfig.html" title="struct Library::Fn::OXC::Parser::ParserConfig">ParserConfig</a>',
+					0,
+				],
+				[
+					'impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html" title="trait core::fmt::Debug">Debug</a> for <a class="struct" href="Library/Fn/OXC/Transformer/struct.TransformerConfig.html" title="struct Library::Fn::OXC::Transformer::TransformerConfig">TransformerConfig</a>',
+					0,
+				],
+				[
+					'impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html" title="trait core::fmt::Debug">Debug</a> for <a class="struct" href="Library/Fn/Transform/private_field/struct.Config.html" title="struct Library::Fn::Transform::private_field::Config">Config</a>',
+					0,
+				],
+				[
+					'impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html" title="trait core::fmt::Debug">Debug</a> for <a class="struct" href="Library/Fn/Worker/struct.WorkerConfig.html" title="struct Library::Fn::Worker::WorkerConfig">WorkerConfig</a>',
+					0,
+				],
+				[
+					'impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html" title="trait core::fmt::Debug">Debug</a> for <a class="struct" href="Library/Fn/Worker/struct.WorkerInfo.html" title="struct Library::Fn::Worker::WorkerInfo">WorkerInfo</a>',
+					0,
+				],
+				[
+					'impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html" title="trait core::fmt::Debug">Debug</a> for <a class="struct" href="Library/Struct/CompilerConfig/struct.CompilerConfig.html" title="struct Library::Struct::CompilerConfig::CompilerConfig">CompilerConfig</a>',
+					0,
+				],
+				[
+					'impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html" title="trait core::fmt::Debug">Debug</a> for <a class="struct" href="Library/Struct/SWC/struct.CompilerConfig.html" title="struct Library::Struct::SWC::CompilerConfig">CompilerConfig</a>',
+					0,
+				],
+				[
+					'impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html" title="trait core::fmt::Debug">Debug</a> for <a class="struct" href="Library/Struct/SWC/struct.CompilerMetrics.html" title="struct Library::Struct::SWC::CompilerMetrics">CompilerMetrics</a>',
+					0,
+				],
+				[
+					'impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html" title="trait core::fmt::Debug">Debug</a> for <a class="struct" href="Library/Struct/SWC/struct.FileInfo.html" title="struct Library::Struct::SWC::FileInfo">FileInfo</a>',
+					0,
+				],
+				[
+					'impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html" title="trait core::fmt::Debug">Debug</a> for <a class="struct" href="Library/Struct/SWC/struct.Option.html" title="struct Library::Struct::SWC::Option">Option</a>',
+					0,
+				],
+			],
+		],
+		[
+			"Rest",
+			[
+				[
+					'impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html" title="trait core::fmt::Debug">Debug</a> for <a class="enum" href="Rest/Fn/Bundle/enum.BundleMode.html" title="enum Rest::Fn::Bundle::BundleMode">BundleMode</a>',
+					0,
+				],
+				[
+					'impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html" title="trait core::fmt::Debug">Debug</a> for <a class="enum" href="Rest/Fn/Worker/enum.WorkerType.html" title="enum Rest::Fn::Worker::WorkerType">WorkerType</a>',
+					0,
+				],
+				[
+					'impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html" title="trait core::fmt::Debug">Debug</a> for <a class="enum" href="Rest/Struct/CompilerConfig/enum.CompilationMode.html" title="enum Rest::Struct::CompilerConfig::CompilationMode">CompilationMode</a>',
+					0,
+				],
+				[
+					'impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html" title="trait core::fmt::Debug">Debug</a> for <a class="enum" href="Rest/Struct/SWC/enum.ModuleFormat.html" title="enum Rest::Struct::SWC::ModuleFormat">ModuleFormat</a>',
+					0,
+				],
+				[
+					'impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html" title="trait core::fmt::Debug">Debug</a> for <a class="struct" href="Rest/Fn/Bundle/config/struct.BundleConfig.html" title="struct Rest::Fn::Bundle::config::BundleConfig">BundleConfig</a>',
+					0,
+				],
+				[
+					'impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html" title="trait core::fmt::Debug">Debug</a> for <a class="struct" href="Rest/Fn/Bundle/struct.BundleEntry.html" title="struct Rest::Fn::Bundle::BundleEntry">BundleEntry</a>',
+					0,
+				],
+				[
+					'impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html" title="trait core::fmt::Debug">Debug</a> for <a class="struct" href="Rest/Fn/Bundle/struct.BundleResult.html" title="struct Rest::Fn::Bundle::BundleResult">BundleResult</a>',
+					0,
+				],
+				[
+					'impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html" title="trait core::fmt::Debug">Debug</a> for <a class="struct" href="Rest/Fn/NLS/struct.LocalizationBundle.html" title="struct Rest::Fn::NLS::LocalizationBundle">LocalizationBundle</a>',
+					0,
+				],
+				[
+					'impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html" title="trait core::fmt::Debug">Debug</a> for <a class="struct" href="Rest/Fn/NLS/struct.LocalizationEntry.html" title="struct Rest::Fn::NLS::LocalizationEntry">LocalizationEntry</a>',
+					0,
+				],
+				[
+					'impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html" title="trait core::fmt::Debug">Debug</a> for <a class="struct" href="Rest/Fn/NLS/struct.NLSConfig.html" title="struct Rest::Fn::NLS::NLSConfig">NLSConfig</a>',
+					0,
+				],
+				[
+					'impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html" title="trait core::fmt::Debug">Debug</a> for <a class="struct" href="Rest/Fn/OXC/Codegen/struct.CodegenConfig.html" title="struct Rest::Fn::OXC::Codegen::CodegenConfig">CodegenConfig</a>',
+					0,
+				],
+				[
+					'impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html" title="trait core::fmt::Debug">Debug</a> for <a class="struct" href="Rest/Fn/OXC/Compiler/struct.CompilerMetrics.html" title="struct Rest::Fn::OXC::Compiler::CompilerMetrics">CompilerMetrics</a>',
+					0,
+				],
+				[
+					'impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html" title="trait core::fmt::Debug">Debug</a> for <a class="struct" href="Rest/Fn/OXC/Parser/struct.ParserConfig.html" title="struct Rest::Fn::OXC::Parser::ParserConfig">ParserConfig</a>',
+					0,
+				],
+				[
+					'impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html" title="trait core::fmt::Debug">Debug</a> for <a class="struct" href="Rest/Fn/OXC/Transformer/struct.TransformerConfig.html" title="struct Rest::Fn::OXC::Transformer::TransformerConfig">TransformerConfig</a>',
+					0,
+				],
+				[
+					'impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html" title="trait core::fmt::Debug">Debug</a> for <a class="struct" href="Rest/Fn/Transform/private_field/struct.Config.html" title="struct Rest::Fn::Transform::private_field::Config">Config</a>',
+					0,
+				],
+				[
+					'impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html" title="trait core::fmt::Debug">Debug</a> for <a class="struct" href="Rest/Fn/Worker/struct.WorkerConfig.html" title="struct Rest::Fn::Worker::WorkerConfig">WorkerConfig</a>',
+					0,
+				],
+				[
+					'impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html" title="trait core::fmt::Debug">Debug</a> for <a class="struct" href="Rest/Fn/Worker/struct.WorkerInfo.html" title="struct Rest::Fn::Worker::WorkerInfo">WorkerInfo</a>',
+					0,
+				],
+				[
+					'impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html" title="trait core::fmt::Debug">Debug</a> for <a class="struct" href="Rest/Struct/CompilerConfig/struct.CompilerConfig.html" title="struct Rest::Struct::CompilerConfig::CompilerConfig">CompilerConfig</a>',
+					0,
+				],
+				[
+					'impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html" title="trait core::fmt::Debug">Debug</a> for <a class="struct" href="Rest/Struct/SWC/struct.CompilerConfig.html" title="struct Rest::Struct::SWC::CompilerConfig">CompilerConfig</a>',
+					0,
+				],
+				[
+					'impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html" title="trait core::fmt::Debug">Debug</a> for <a class="struct" href="Rest/Struct/SWC/struct.CompilerMetrics.html" title="struct Rest::Struct::SWC::CompilerMetrics">CompilerMetrics</a>',
+					0,
+				],
+				[
+					'impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html" title="trait core::fmt::Debug">Debug</a> for <a class="struct" href="Rest/Struct/SWC/struct.FileInfo.html" title="struct Rest::Struct::SWC::FileInfo">FileInfo</a>',
+					0,
+				],
+				[
+					'impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html" title="trait core::fmt::Debug">Debug</a> for <a class="struct" href="Rest/Struct/SWC/struct.Option.html" title="struct Rest::Struct::SWC::Option">Option</a>',
+					0,
+				],
+			],
+		],
+	]);
+	if (window.register_implementors) {
+		window.register_implementors(implementors);
+	} else {
+		window.pending_implementors = implementors;
+	}
+})();
 //{"start":59,"fragment_lengths":[6435,6301]}

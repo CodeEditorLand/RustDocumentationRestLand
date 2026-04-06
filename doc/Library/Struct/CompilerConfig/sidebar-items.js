@@ -1,1 +1,4 @@
-window.SIDEBAR_ITEMS = {"enum":["CompilationMode"],"struct":["CompilerConfig"]};
+window.SIDEBAR_ITEMS = {
+	"enum": ["CompilationMode"],
+	"struct": ["CompilerConfig"],
+};

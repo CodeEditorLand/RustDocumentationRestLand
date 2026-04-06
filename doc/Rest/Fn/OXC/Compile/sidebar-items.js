@@ -1,1 +1,4 @@
-window.SIDEBAR_ITEMS = {"fn":["Fn","get_nesting_depth"],"static":["FILE_PROCESS_COUNT"]};
+window.SIDEBAR_ITEMS = {
+	"fn": ["Fn", "get_nesting_depth"],
+	"static": ["FILE_PROCESS_COUNT"],
+};

@@ -1,1 +1,1 @@
-window.SIDEBAR_ITEMS = {"mod":["Command"]};
+window.SIDEBAR_ITEMS = { "mod": ["Command"] };

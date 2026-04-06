@@ -1,1 +1,4 @@
-window.SIDEBAR_ITEMS = {"fn":["compile_worker_file"],"struct":["WorkerCompiler"]};
+window.SIDEBAR_ITEMS = {
+	"fn": ["compile_worker_file"],
+	"struct": ["WorkerCompiler"],
+};

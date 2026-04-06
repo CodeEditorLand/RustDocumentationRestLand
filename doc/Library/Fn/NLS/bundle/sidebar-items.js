@@ -1,1 +1,4 @@
-window.SIDEBAR_ITEMS = {"fn":["format_metadata","generate_vscode_bundle"],"struct":["NLSBundle"]};
+window.SIDEBAR_ITEMS = {
+	"fn": ["format_metadata", "generate_vscode_bundle"],
+	"struct": ["NLSBundle"],
+};

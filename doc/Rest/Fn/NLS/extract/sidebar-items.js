@@ -1,1 +1,4 @@
-window.SIDEBAR_ITEMS = {"fn":["extract_nls_keys"],"struct":["NLSExtractor"]};
+window.SIDEBAR_ITEMS = {
+	"fn": ["extract_nls_keys"],
+	"struct": ["NLSExtractor"],
+};

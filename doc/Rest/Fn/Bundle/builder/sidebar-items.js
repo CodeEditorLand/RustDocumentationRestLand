@@ -1,1 +1,1 @@
-window.SIDEBAR_ITEMS = {"fn":["build_bundle"],"struct":["BundleBuilder"]};
+window.SIDEBAR_ITEMS = { "fn": ["build_bundle"], "struct": ["BundleBuilder"] };
