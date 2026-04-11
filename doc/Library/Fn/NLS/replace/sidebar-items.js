@@ -1,4 +1,0 @@
-window.SIDEBAR_ITEMS = {
-	"fn": ["replace_nls_keys"],
-	"struct": ["NLSReplacer"],
-};

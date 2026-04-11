@@ -1,4 +1,0 @@
-window.SIDEBAR_ITEMS = {
-	"mod": ["bundle", "extract", "replace"],
-	"struct": ["LocalizationBundle", "LocalizationEntry", "NLSConfig"],
-};

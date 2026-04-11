@@ -1,4 +1,0 @@
-window.SIDEBAR_ITEMS = {
-	"fn": ["format_metadata", "generate_vscode_bundle"],
-	"struct": ["NLSBundle"],
-};

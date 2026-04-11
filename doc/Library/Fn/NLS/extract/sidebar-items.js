@@ -1,4 +1,0 @@
-window.SIDEBAR_ITEMS = {
-	"fn": ["extract_nls_keys"],
-	"struct": ["NLSExtractor"],
-};

@@ -1,4 +1,0 @@
-window.SIDEBAR_ITEMS = {
-	"fn": ["Fn"],
-	"mod": ["Entry", "Parallel", "Sequential"],
-};
