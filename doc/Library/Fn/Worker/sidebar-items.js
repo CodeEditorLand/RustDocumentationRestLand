@@ -1,1 +1,1 @@
-window.SIDEBAR_ITEMS = {"enum":["WorkerType"],"mod":["bootstrap","compile","detect"],"struct":["WorkerConfig","WorkerInfo"]};
+window.SIDEBAR_ITEMS = {"enum":["WorkerType"],"mod":["Bootstrap","Compile","Detect"],"struct":["WorkerConfig","WorkerInfo"]};

@@ -1,1 +1,1 @@
-window.SIDEBAR_ITEMS = {"mod":["private_field"]};
+window.SIDEBAR_ITEMS = {"mod":["PrivateField"]};

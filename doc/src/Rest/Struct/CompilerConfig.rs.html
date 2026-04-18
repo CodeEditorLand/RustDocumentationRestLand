@@ -3,7 +3,7 @@
 <a href=#3 id=3 data-nosnippet>3</a>//! This module consolidates all configuration options for Phase 3 advanced
 <a href=#4 id=4 data-nosnippet>4</a>//! features.
 <a href=#5 id=5 data-nosnippet>5</a>
-<a href=#6 id=6 data-nosnippet>6</a></span><span class="kw">use </span><span class="kw">crate</span>::Fn::{<a href="../Fn/Bundle/config.rs.html#9-38">Bundle::BundleConfig</a>, <a href="../Fn/NLS/mod.rs.html#18-29">NLS::NLSConfig</a>, <a href="../Fn/Worker/mod.rs.html#18-31">Worker::WorkerConfig</a>};
+<a href=#6 id=6 data-nosnippet>6</a></span><span class="kw">use </span><span class="kw">crate</span>::Fn::{<a href="../Fn/Bundle/Config.rs.html#9-38">Bundle::BundleConfig</a>, <a href="../Fn/NLS/mod.rs.html#21-32">NLS::NLSConfig</a>, <a href="../Fn/Worker/mod.rs.html#21-34">Worker::WorkerConfig</a>};
 <a href=#7 id=7 data-nosnippet>7</a>
 <a href=#8 id=8 data-nosnippet>8</a><span class="doccomment">/// Advanced compiler configuration
 <a href=#9 id=9 data-nosnippet>9</a>///
@@ -27,13 +27,13 @@
 <a href=#27 id=27 data-nosnippet>27</a>	</span><span class="kw">pub </span>private_field_prefix:<a href="https://doc.rust-lang.org/nightly/alloc/string/struct.String.html">String</a>,
 <a href=#28 id=28 data-nosnippet>28</a>
 <a href=#29 id=29 data-nosnippet>29</a>	<span class="doccomment">/// NLS configuration
-<a href=#30 id=30 data-nosnippet>30</a>	</span><span class="kw">pub </span>nls:<a class="prelude-ty" href="https://doc.rust-lang.org/nightly/core/option/enum.Option.html">Option</a>&lt;<a href="../Fn/NLS/mod.rs.html#18-29">NLSConfig</a>&gt;,
+<a href=#30 id=30 data-nosnippet>30</a>	</span><span class="kw">pub </span>nls:<a class="prelude-ty" href="https://doc.rust-lang.org/nightly/core/option/enum.Option.html">Option</a>&lt;<a href="../Fn/NLS/mod.rs.html#21-32">NLSConfig</a>&gt;,
 <a href=#31 id=31 data-nosnippet>31</a>
 <a href=#32 id=32 data-nosnippet>32</a>	<span class="doccomment">/// Worker configuration
-<a href=#33 id=33 data-nosnippet>33</a>	</span><span class="kw">pub </span>worker:<a class="prelude-ty" href="https://doc.rust-lang.org/nightly/core/option/enum.Option.html">Option</a>&lt;<a href="../Fn/Worker/mod.rs.html#18-31">WorkerConfig</a>&gt;,
+<a href=#33 id=33 data-nosnippet>33</a>	</span><span class="kw">pub </span>worker:<a class="prelude-ty" href="https://doc.rust-lang.org/nightly/core/option/enum.Option.html">Option</a>&lt;<a href="../Fn/Worker/mod.rs.html#21-34">WorkerConfig</a>&gt;,
 <a href=#34 id=34 data-nosnippet>34</a>
 <a href=#35 id=35 data-nosnippet>35</a>	<span class="doccomment">/// Bundling configuration
-<a href=#36 id=36 data-nosnippet>36</a>	</span><span class="kw">pub </span>bundle:<a class="prelude-ty" href="https://doc.rust-lang.org/nightly/core/option/enum.Option.html">Option</a>&lt;<a href="../Fn/Bundle/config.rs.html#9-38">BundleConfig</a>&gt;,
+<a href=#36 id=36 data-nosnippet>36</a>	</span><span class="kw">pub </span>bundle:<a class="prelude-ty" href="https://doc.rust-lang.org/nightly/core/option/enum.Option.html">Option</a>&lt;<a href="../Fn/Bundle/Config.rs.html#9-38">BundleConfig</a>&gt;,
 <a href=#37 id=37 data-nosnippet>37</a>
 <a href=#38 id=38 data-nosnippet>38</a>	<span class="doccomment">/// Compilation mode
 <a href=#39 id=39 data-nosnippet>39</a>	</span><span class="kw">pub </span>mode:<a href="#44-54">CompilationMode</a>,
@@ -79,9 +79,9 @@
 <a href=#79 id=79 data-nosnippet>79</a>			emit_decorators_metadata:<span class="bool-val">true</span>,
 <a href=#80 id=80 data-nosnippet>80</a>			convert_private_fields:<span class="bool-val">true</span>,
 <a href=#81 id=81 data-nosnippet>81</a>			private_field_prefix:<span class="string">"__"</span>.<a href="https://doc.rust-lang.org/nightly/alloc/string/trait.ToString.html#tymethod.to_string">to_string</a>(),
-<a href=#82 id=82 data-nosnippet>82</a>			nls:<a class="prelude-val" href="https://doc.rust-lang.org/nightly/core/option/enum.Option.html#variant.Some">Some</a>(<a href="../Fn/NLS/mod.rs.html#18-29">NLSConfig</a>::<a href="../Fn/NLS/mod.rs.html#32-40">new</a>()),
-<a href=#83 id=83 data-nosnippet>83</a>			worker:<a class="prelude-val" href="https://doc.rust-lang.org/nightly/core/option/enum.Option.html#variant.Some">Some</a>(<a href="../Fn/Worker/mod.rs.html#18-31">WorkerConfig</a>::<a href="../Fn/Worker/mod.rs.html#34-43">new</a>()),
-<a href=#84 id=84 data-nosnippet>84</a>			bundle:<a class="prelude-val" href="https://doc.rust-lang.org/nightly/core/option/enum.Option.html#variant.Some">Some</a>(<a href="../Fn/Bundle/config.rs.html#9-38">BundleConfig</a>::<a href="../Fn/Bundle/config.rs.html#66">bundle</a>()),
+<a href=#82 id=82 data-nosnippet>82</a>			nls:<a class="prelude-val" href="https://doc.rust-lang.org/nightly/core/option/enum.Option.html#variant.Some">Some</a>(<a href="../Fn/NLS/mod.rs.html#21-32">NLSConfig</a>::<a href="../Fn/NLS/mod.rs.html#35-43">new</a>()),
+<a href=#83 id=83 data-nosnippet>83</a>			worker:<a class="prelude-val" href="https://doc.rust-lang.org/nightly/core/option/enum.Option.html#variant.Some">Some</a>(<a href="../Fn/Worker/mod.rs.html#21-34">WorkerConfig</a>::<a href="../Fn/Worker/mod.rs.html#37-46">new</a>()),
+<a href=#84 id=84 data-nosnippet>84</a>			bundle:<a class="prelude-val" href="https://doc.rust-lang.org/nightly/core/option/enum.Option.html#variant.Some">Some</a>(<a href="../Fn/Bundle/Config.rs.html#9-38">BundleConfig</a>::<a href="../Fn/Bundle/Config.rs.html#66">bundle</a>()),
 <a href=#85 id=85 data-nosnippet>85</a>			mode:CompilationMode::<a href="#53">VSCode</a>,
 <a href=#86 id=86 data-nosnippet>86</a>		}
 <a href=#87 id=87 data-nosnippet>87</a>	}
@@ -93,20 +93,20 @@
 <a href=#93 id=93 data-nosnippet>93</a>	}
 <a href=#94 id=94 data-nosnippet>94</a>
 <a href=#95 id=95 data-nosnippet>95</a>	<span class="doccomment">/// Enable NLS processing
-<a href=#96 id=96 data-nosnippet>96</a>	</span><span class="kw">pub fn </span>with_nls(<span class="kw-2">mut </span><span class="self">self</span>, config:<a href="../Fn/NLS/mod.rs.html#18-29">NLSConfig</a>) -&gt; <span class="self">Self </span>{
+<a href=#96 id=96 data-nosnippet>96</a>	</span><span class="kw">pub fn </span>with_nls(<span class="kw-2">mut </span><span class="self">self</span>, config:<a href="../Fn/NLS/mod.rs.html#21-32">NLSConfig</a>) -&gt; <span class="self">Self </span>{
 <a href=#97 id=97 data-nosnippet>97</a>		<a class="self" href="#96">self</a>.nls = <a class="prelude-val" href="https://doc.rust-lang.org/nightly/core/option/enum.Option.html#variant.Some">Some</a>(<a href="#96">config</a>);
 <a href=#98 id=98 data-nosnippet>98</a>		<a class="self" href="#96">self</a>
 <a href=#99 id=99 data-nosnippet>99</a>	}
 <a href=#100 id=100 data-nosnippet>100</a>
 <a href=#101 id=101 data-nosnippet>101</a>	<span class="doccomment">/// Enable worker compilation
-<a href=#102 id=102 data-nosnippet>102</a>	</span><span class="kw">pub fn </span>with_workers(<span class="kw-2">mut </span><span class="self">self</span>, config:<a href="../Fn/Worker/mod.rs.html#18-31">WorkerConfig</a>) -&gt; <span class="self">Self </span>{
+<a href=#102 id=102 data-nosnippet>102</a>	</span><span class="kw">pub fn </span>with_workers(<span class="kw-2">mut </span><span class="self">self</span>, config:<a href="../Fn/Worker/mod.rs.html#21-34">WorkerConfig</a>) -&gt; <span class="self">Self </span>{
 <a href=#103 id=103 data-nosnippet>103</a>		<a class="self" href="#102">self</a>.worker = <a class="prelude-val" href="https://doc.rust-lang.org/nightly/core/option/enum.Option.html#variant.Some">Some</a>(<a href="#102">config</a>);
 <a href=#104 id=104 data-nosnippet>104</a>		<a class="self" href="#102">self</a>
 <a href=#105 id=105 data-nosnippet>105</a>	}
 <a href=#106 id=106 data-nosnippet>106</a>
 <a href=#107 id=107 data-nosnippet>107</a>	<span class="doccomment">/// Enable bundling
-<a href=#108 id=108 data-nosnippet>108</a>	</span><span class="kw">pub fn </span>with_bundling(<span class="kw-2">mut </span><span class="self">self</span>, config:<a href="../Fn/Bundle/config.rs.html#9-38">BundleConfig</a>) -&gt; <span class="self">Self </span>{
-<a href=#109 id=109 data-nosnippet>109</a>		<span class="kw">let </span>requires_bundle = <a href="#108">config</a>.<a href="../Fn/Bundle/config.rs.html#129">requires_bundle</a>();
+<a href=#108 id=108 data-nosnippet>108</a>	</span><span class="kw">pub fn </span>with_bundling(<span class="kw-2">mut </span><span class="self">self</span>, config:<a href="../Fn/Bundle/Config.rs.html#9-38">BundleConfig</a>) -&gt; <span class="self">Self </span>{
+<a href=#109 id=109 data-nosnippet>109</a>		<span class="kw">let </span>requires_bundle = <a href="#108">config</a>.<a href="../Fn/Bundle/Config.rs.html#129">requires_bundle</a>();
 <a href=#110 id=110 data-nosnippet>110</a>		<a class="self" href="#108">self</a>.bundle = <a class="prelude-val" href="https://doc.rust-lang.org/nightly/core/option/enum.Option.html#variant.Some">Some</a>(<a href="#108">config</a>);
 <a href=#111 id=111 data-nosnippet>111</a>		<span class="kw">if </span><a href="#109">requires_bundle</a> {
 <a href=#112 id=112 data-nosnippet>112</a>			<a class="self" href="#108">self</a>.mode = CompilationMode::<a href="#49">Bundle</a>;
@@ -124,7 +124,7 @@
 <a href=#124 id=124 data-nosnippet>124</a>	</span><span class="kw">pub fn </span>are_workers_enabled(<span class="kw-2">&amp;</span><span class="self">self</span>) -&gt; <a href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a> { <a class="self" href="#124">self</a>.worker.<a href="https://doc.rust-lang.org/nightly/core/option/enum.Option.html#method.as_ref">as_ref</a>().<a href="https://doc.rust-lang.org/nightly/core/option/enum.Option.html#method.map">map</a>(|w| <a href="#124">w</a>.enabled).<a href="https://doc.rust-lang.org/nightly/core/option/enum.Option.html#method.unwrap_or">unwrap_or</a>(<span class="bool-val">false</span>) }
 <a href=#125 id=125 data-nosnippet>125</a>
 <a href=#126 id=126 data-nosnippet>126</a>	<span class="doccomment">/// Check if bundling is enabled
-<a href=#127 id=127 data-nosnippet>127</a>	</span><span class="kw">pub fn </span>is_bundling_enabled(<span class="kw-2">&amp;</span><span class="self">self</span>) -&gt; <a href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a> { <a class="self" href="#127">self</a>.bundle.<a href="https://doc.rust-lang.org/nightly/core/option/enum.Option.html#method.as_ref">as_ref</a>().<a href="https://doc.rust-lang.org/nightly/core/option/enum.Option.html#method.map">map</a>(|b| <a href="#127">b</a>.<a href="../Fn/Bundle/config.rs.html#129">requires_bundle</a>()).<a href="https://doc.rust-lang.org/nightly/core/option/enum.Option.html#method.unwrap_or">unwrap_or</a>(<span class="bool-val">false</span>) }
+<a href=#127 id=127 data-nosnippet>127</a>	</span><span class="kw">pub fn </span>is_bundling_enabled(<span class="kw-2">&amp;</span><span class="self">self</span>) -&gt; <a href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a> { <a class="self" href="#127">self</a>.bundle.<a href="https://doc.rust-lang.org/nightly/core/option/enum.Option.html#method.as_ref">as_ref</a>().<a href="https://doc.rust-lang.org/nightly/core/option/enum.Option.html#method.map">map</a>(|b| <a href="#127">b</a>.<a href="../Fn/Bundle/Config.rs.html#129">requires_bundle</a>()).<a href="https://doc.rust-lang.org/nightly/core/option/enum.Option.html#method.unwrap_or">unwrap_or</a>(<span class="bool-val">false</span>) }
 <a href=#128 id=128 data-nosnippet>128</a>}
 <a href=#129 id=129 data-nosnippet>129</a>
 <a href=#130 id=130 data-nosnippet>130</a><span class="kw">impl </span><a href="https://doc.rust-lang.org/nightly/core/default/trait.Default.html">Default</a> <span class="kw">for </span><a href="#16-40">CompilerConfig</a> {
