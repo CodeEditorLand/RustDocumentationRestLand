@@ -10,7 +10,7 @@
 <a href=#10 id=10 data-nosnippet>10</a>
 <a href=#11 id=11 data-nosnippet>11</a><span class="kw">use </span>oxc_allocator::Allocator;
 <a href=#12 id=12 data-nosnippet>12</a><span class="kw">use </span>oxc_ast::ast::Program;
-<a href=#13 id=13 data-nosnippet>13</a><span class="kw">use </span>oxc_codegen::{Codegen, CodegenOptions, CodegenReturn};
+<a href=#13 id=13 data-nosnippet>13</a><span class="kw">use </span>oxc_codegen::{Codegen, CodegenOptions, CodegenReturn, CommentOptions};
 <a href=#14 id=14 data-nosnippet>14</a><span class="kw">use </span>oxc_span::SourceType;
 <a href=#15 id=15 data-nosnippet>15</a><span class="kw">use </span>tracing::{debug, error, info, trace, warn};
 <a href=#16 id=16 data-nosnippet>16</a>
@@ -97,47 +97,54 @@
 <a href=#97 id=97 data-nosnippet>97</a>		config.minify, config.comments
 <a href=#98 id=98 data-nosnippet>98</a>	);
 <a href=#99 id=99 data-nosnippet>99</a>
-<a href=#100 id=100 data-nosnippet>100</a>	<span class="comment">// Configure codegen options
-<a href=#101 id=101 data-nosnippet>101</a>	</span><span class="kw">let </span>options = CodegenOptions { minify:config.minify, comments:config.comments, ..Default::default() };
-<a href=#102 id=102 data-nosnippet>102</a>	<span class="macro">trace!</span>(<span class="string">"[Codegen #{codegen_id}] CodegenOptions configured"</span>);
-<a href=#103 id=103 data-nosnippet>103</a>
-<a href=#104 id=104 data-nosnippet>104</a>	<span class="comment">// Create codegen instance and generate code
-<a href=#105 id=105 data-nosnippet>105</a>	</span><span class="kw">let </span>codegen_start = std::time::Instant::now();
-<a href=#106 id=106 data-nosnippet>106</a>	<span class="kw">let </span>CodegenReturn { code, .. } = Codegen::new().with_options(options).build(program);
-<a href=#107 id=107 data-nosnippet>107</a>	<span class="macro">info!</span>(
-<a href=#108 id=108 data-nosnippet>108</a>		<span class="string">"[Codegen #{codegen_id}] Code generation completed in {:?}"</span>,
-<a href=#109 id=109 data-nosnippet>109</a>		codegen_start.elapsed()
-<a href=#110 id=110 data-nosnippet>110</a>	);
-<a href=#111 id=111 data-nosnippet>111</a>
-<a href=#112 id=112 data-nosnippet>112</a>	<span class="kw">let </span>code_len = code.len();
-<a href=#113 id=113 data-nosnippet>113</a>	<span class="macro">debug!</span>(<span class="string">"[Codegen #{codegen_id}] Generated {} bytes of code"</span>, code_len);
-<a href=#114 id=114 data-nosnippet>114</a>	<span class="macro">trace!</span>(
-<a href=#115 id=115 data-nosnippet>115</a>		<span class="string">"[Codegen #{codegen_id}] First 100 chars of output: {:?}"</span>,
-<a href=#116 id=116 data-nosnippet>116</a>		code.chars().take(<span class="number">100</span>).collect::&lt;String&gt;()
+<a href=#100 id=100 data-nosnippet>100</a>	<span class="comment">// Configure codegen options. OXC 0.127 replaced the flat `comments: bool`
+<a href=#101 id=101 data-nosnippet>101</a>	// field with a structured `CommentOptions` covering normal / jsdoc /
+<a href=#102 id=102 data-nosnippet>102</a>	// annotation / legal comment categories. Map our legacy boolean onto the
+<a href=#103 id=103 data-nosnippet>103</a>	// two extremes: `true` ⇒ defaults (keep everything), `false` ⇒ disabled
+<a href=#104 id=104 data-nosnippet>104</a>	// (strip everything). Finer-grained gates can layer on later by exposing
+<a href=#105 id=105 data-nosnippet>105</a>	// dedicated `CodegenConfig` fields.
+<a href=#106 id=106 data-nosnippet>106</a>	</span><span class="kw">let </span>comment_options =
+<a href=#107 id=107 data-nosnippet>107</a>		<span class="kw">if </span>config.comments { CommentOptions::default() } <span class="kw">else </span>{ CommentOptions::disabled() };
+<a href=#108 id=108 data-nosnippet>108</a>	<span class="kw">let </span>options = CodegenOptions { minify:config.minify, comments:comment_options, ..Default::default() };
+<a href=#109 id=109 data-nosnippet>109</a>	<span class="macro">trace!</span>(<span class="string">"[Codegen #{codegen_id}] CodegenOptions configured"</span>);
+<a href=#110 id=110 data-nosnippet>110</a>
+<a href=#111 id=111 data-nosnippet>111</a>	<span class="comment">// Create codegen instance and generate code
+<a href=#112 id=112 data-nosnippet>112</a>	</span><span class="kw">let </span>codegen_start = std::time::Instant::now();
+<a href=#113 id=113 data-nosnippet>113</a>	<span class="kw">let </span>CodegenReturn { code, .. } = Codegen::new().with_options(options).build(program);
+<a href=#114 id=114 data-nosnippet>114</a>	<span class="macro">info!</span>(
+<a href=#115 id=115 data-nosnippet>115</a>		<span class="string">"[Codegen #{codegen_id}] Code generation completed in {:?}"</span>,
+<a href=#116 id=116 data-nosnippet>116</a>		codegen_start.elapsed()
 <a href=#117 id=117 data-nosnippet>117</a>	);
 <a href=#118 id=118 data-nosnippet>118</a>
-<a href=#119 id=119 data-nosnippet>119</a>	<span class="macro">info!</span>(<span class="string">"[Codegen #{codegen_id}] SUCCESS: Generated {} bytes"</span>, code_len);
-<a href=#120 id=120 data-nosnippet>120</a>	<span class="comment">// Transform OXC output to match VSCode static class property format
-<a href=#121 id=121 data-nosnippet>121</a>	</span><span class="kw">let </span>transformed_code = transform_static_class_properties(<span class="kw-2">&amp;</span>code);
-<a href=#122 id=122 data-nosnippet>122</a>	<span class="prelude-val">Ok</span>(CodegenResult { code:transformed_code, code_len })
-<a href=#123 id=123 data-nosnippet>123</a>}
-<a href=#124 id=124 data-nosnippet>124</a>
-<a href=#125 id=125 data-nosnippet>125</a><span class="doccomment">/// Write the generated code to a file
-<a href=#126 id=126 data-nosnippet>126</a>///
-<a href=#127 id=127 data-nosnippet>127</a>/// # Arguments
-<a href=#128 id=128 data-nosnippet>128</a>/// * `output_path` - The path to write the output file
-<a href=#129 id=129 data-nosnippet>129</a>/// * `result` - The codegen result containing source text
-<a href=#130 id=130 data-nosnippet>130</a></span><span class="kw">pub fn </span><a href="../../../../Rest/Fn/OXC/Codegen/fn.write_output.html">write_output</a>(output_path:<span class="kw-2">&amp;</span>std::path::<a href="https://doc.rust-lang.org/nightly/std/path/struct.Path.html">Path</a>, result:<span class="kw-2">&amp;</span><a href="#42-47">CodegenResult</a>) -&gt; <a class="prelude-ty" href="https://doc.rust-lang.org/nightly/core/result/enum.Result.html">Result</a>&lt;(), std::io::<a href="https://doc.rust-lang.org/nightly/std/io/error/struct.Error.html">Error</a>&gt; {
-<a href=#131 id=131 data-nosnippet>131</a>	<span class="comment">// Create parent directories if they don't exist
-<a href=#132 id=132 data-nosnippet>132</a>	</span><span class="kw">if let </span><a class="prelude-val" href="https://doc.rust-lang.org/nightly/core/option/enum.Option.html#variant.Some">Some</a>(parent) = <a href="#130">output_path</a>.<a href="https://doc.rust-lang.org/nightly/std/path/struct.Path.html#method.parent">parent</a>() {
-<a href=#133 id=133 data-nosnippet>133</a>		std::fs::<a href="https://doc.rust-lang.org/nightly/std/fs/fn.create_dir_all.html">create_dir_all</a>(<a href="#132">parent</a>)<span class="question-mark">?</span>;
-<a href=#134 id=134 data-nosnippet>134</a>	}
-<a href=#135 id=135 data-nosnippet>135</a>
-<a href=#136 id=136 data-nosnippet>136</a>	<span class="comment">// Write the source code
-<a href=#137 id=137 data-nosnippet>137</a>	</span>std::fs::<a href="https://doc.rust-lang.org/nightly/std/fs/fn.write.html">write</a>(<a href="#130">output_path</a>, <span class="kw-2">&amp;</span><a href="#130">result</a>.code)<span class="question-mark">?</span>;
-<a href=#138 id=138 data-nosnippet>138</a>
-<a href=#139 id=139 data-nosnippet>139</a>	<span class="macro">debug!</span>(<span class="string">"Written output to {}"</span>, output_path.display());
-<a href=#140 id=140 data-nosnippet>140</a>
-<a href=#141 id=141 data-nosnippet>141</a>	<a class="prelude-val" href="https://doc.rust-lang.org/nightly/core/result/enum.Result.html#variant.Ok">Ok</a>(())
-<a href=#142 id=142 data-nosnippet>142</a>}
+<a href=#119 id=119 data-nosnippet>119</a>	<span class="kw">let </span>code_len = code.len();
+<a href=#120 id=120 data-nosnippet>120</a>	<span class="macro">debug!</span>(<span class="string">"[Codegen #{codegen_id}] Generated {} bytes of code"</span>, code_len);
+<a href=#121 id=121 data-nosnippet>121</a>	<span class="macro">trace!</span>(
+<a href=#122 id=122 data-nosnippet>122</a>		<span class="string">"[Codegen #{codegen_id}] First 100 chars of output: {:?}"</span>,
+<a href=#123 id=123 data-nosnippet>123</a>		code.chars().take(<span class="number">100</span>).collect::&lt;String&gt;()
+<a href=#124 id=124 data-nosnippet>124</a>	);
+<a href=#125 id=125 data-nosnippet>125</a>
+<a href=#126 id=126 data-nosnippet>126</a>	<span class="macro">info!</span>(<span class="string">"[Codegen #{codegen_id}] SUCCESS: Generated {} bytes"</span>, code_len);
+<a href=#127 id=127 data-nosnippet>127</a>	<span class="comment">// Transform OXC output to match VSCode static class property format
+<a href=#128 id=128 data-nosnippet>128</a>	</span><span class="kw">let </span>transformed_code = transform_static_class_properties(<span class="kw-2">&amp;</span>code);
+<a href=#129 id=129 data-nosnippet>129</a>	<span class="prelude-val">Ok</span>(CodegenResult { code:transformed_code, code_len })
+<a href=#130 id=130 data-nosnippet>130</a>}
+<a href=#131 id=131 data-nosnippet>131</a>
+<a href=#132 id=132 data-nosnippet>132</a><span class="doccomment">/// Write the generated code to a file
+<a href=#133 id=133 data-nosnippet>133</a>///
+<a href=#134 id=134 data-nosnippet>134</a>/// # Arguments
+<a href=#135 id=135 data-nosnippet>135</a>/// * `output_path` - The path to write the output file
+<a href=#136 id=136 data-nosnippet>136</a>/// * `result` - The codegen result containing source text
+<a href=#137 id=137 data-nosnippet>137</a></span><span class="kw">pub fn </span><a href="../../../../Rest/Fn/OXC/Codegen/fn.write_output.html">write_output</a>(output_path:<span class="kw-2">&amp;</span>std::path::<a href="https://doc.rust-lang.org/nightly/std/path/struct.Path.html">Path</a>, result:<span class="kw-2">&amp;</span><a href="#42-47">CodegenResult</a>) -&gt; <a class="prelude-ty" href="https://doc.rust-lang.org/nightly/core/result/enum.Result.html">Result</a>&lt;(), std::io::<a href="https://doc.rust-lang.org/nightly/std/io/error/struct.Error.html">Error</a>&gt; {
+<a href=#138 id=138 data-nosnippet>138</a>	<span class="comment">// Create parent directories if they don't exist
+<a href=#139 id=139 data-nosnippet>139</a>	</span><span class="kw">if let </span><a class="prelude-val" href="https://doc.rust-lang.org/nightly/core/option/enum.Option.html#variant.Some">Some</a>(parent) = <a href="#137">output_path</a>.<a href="https://doc.rust-lang.org/nightly/std/path/struct.Path.html#method.parent">parent</a>() {
+<a href=#140 id=140 data-nosnippet>140</a>		std::fs::<a href="https://doc.rust-lang.org/nightly/std/fs/fn.create_dir_all.html">create_dir_all</a>(<a href="#139">parent</a>)<span class="question-mark">?</span>;
+<a href=#141 id=141 data-nosnippet>141</a>	}
+<a href=#142 id=142 data-nosnippet>142</a>
+<a href=#143 id=143 data-nosnippet>143</a>	<span class="comment">// Write the source code
+<a href=#144 id=144 data-nosnippet>144</a>	</span>std::fs::<a href="https://doc.rust-lang.org/nightly/std/fs/fn.write.html">write</a>(<a href="#137">output_path</a>, <span class="kw-2">&amp;</span><a href="#137">result</a>.code)<span class="question-mark">?</span>;
+<a href=#145 id=145 data-nosnippet>145</a>
+<a href=#146 id=146 data-nosnippet>146</a>	<span class="macro">debug!</span>(<span class="string">"Written output to {}"</span>, output_path.display());
+<a href=#147 id=147 data-nosnippet>147</a>
+<a href=#148 id=148 data-nosnippet>148</a>	<a class="prelude-val" href="https://doc.rust-lang.org/nightly/core/result/enum.Result.html#variant.Ok">Ok</a>(())
+<a href=#149 id=149 data-nosnippet>149</a>}
 </code></pre></div></section></main></body></html>
