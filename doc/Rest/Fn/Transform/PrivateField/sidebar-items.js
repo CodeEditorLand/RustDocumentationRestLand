@@ -1,1 +1,0 @@
-window.SIDEBAR_ITEMS = {"fn":["convert_private_fields"],"struct":["Config","PrivateFieldTransform"]};

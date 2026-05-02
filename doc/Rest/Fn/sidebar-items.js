@@ -1,1 +1,0 @@
-window.SIDEBAR_ITEMS = {"mod":["Binary","Build","Bundle","NLS","OXC","SWC","Transform","Worker"]};
