@@ -54,19 +54,19 @@
 <a href=#54 id=54 data-nosnippet>54</a>						<span class="kw">let </span>Parallel = <a href="#35">compile_matches</a>.get_flag(<span class="string">"Parallel"</span>);
 <a href=#55 id=55 data-nosnippet>55</a>
 <a href=#56 id=56 data-nosnippet>56</a>						<span class="comment">// Create VSCode-compatible config
-<a href=#57 id=57 data-nosnippet>57</a>						</span><span class="kw">let </span>Config = <span class="kw">crate</span>::Struct::SWC::<a href="../SWC.rs.html#47-58">CompilerConfig</a> {
+<a href=#57 id=57 data-nosnippet>57</a>						</span><span class="kw">let </span>Config = <span class="kw">crate</span>::Struct::SWC::<a href="../SWC.rs.html#60-77">CompilerConfig</a> {
 <a href=#58 id=58 data-nosnippet>58</a>							<a href="#44">Target</a>,
 <a href=#59 id=59 data-nosnippet>59</a>							Module:<a href="#48">Module</a>.<a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone">clone</a>(),
 <a href=#60 id=60 data-nosnippet>60</a>							Strict:<span class="bool-val">true</span>,
 <a href=#61 id=61 data-nosnippet>61</a>							EmitDecoratorsMetadata:<span class="bool-val">true</span>,
 <a href=#62 id=62 data-nosnippet>62</a>							TreeShaking:<span class="bool-val">true</span>,
 <a href=#63 id=63 data-nosnippet>63</a>							Minify:<span class="bool-val">false</span>,
-<a href=#64 id=64 data-nosnippet>64</a>							ModuleFormat:<span class="kw">crate</span>::Struct::SWC::<a href="../SWC.rs.html#10-22">ModuleFormat</a>::<a href="../SWC.rs.html#25-33">from_str</a>(<span class="kw-2">&amp;</span><a href="#48">Module</a>),
+<a href=#64 id=64 data-nosnippet>64</a>							ModuleFormat:<span class="kw">crate</span>::Struct::SWC::<a href="../SWC.rs.html#11-27">ModuleFormat</a>::<a href="../SWC.rs.html#30-42">from_str</a>(<span class="kw-2">&amp;</span><a href="#48">Module</a>),
 <a href=#65 id=65 data-nosnippet>65</a>						};
 <a href=#66 id=66 data-nosnippet>66</a>
 <a href=#67 id=67 data-nosnippet>67</a>						<span class="comment">// Call the compile function with output directory
-<a href=#68 id=68 data-nosnippet>68</a>						</span><span class="kw">let _ </span>= <span class="kw">crate</span>::Fn::SWC::Compile::<a href="../../Fn/SWC/Compile.rs.html#15-103">Fn</a>(
-<a href=#69 id=69 data-nosnippet>69</a>							<span class="kw">crate</span>::Struct::SWC::<a href="../SWC.rs.html#61-71">Option</a> {
+<a href=#68 id=68 data-nosnippet>68</a>						</span><span class="kw">let _ </span>= <span class="kw">crate</span>::Fn::SWC::Compile::<a href="../../Fn/SWC/Compile.rs.html#15-118">Fn</a>(
+<a href=#69 id=69 data-nosnippet>69</a>							<span class="kw">crate</span>::Struct::SWC::<a href="../SWC.rs.html#80-95">Option</a> {
 <a href=#70 id=70 data-nosnippet>70</a>								entry:<a href="https://doc.rust-lang.org/nightly/alloc/macro.vec.html">vec!</a>[<span class="macro">vec!</span>[Input.clone()]],
 <a href=#71 id=71 data-nosnippet>71</a>								separator:std::path::<a href="https://doc.rust-lang.org/nightly/std/path/constant.MAIN_SEPARATOR.html">MAIN_SEPARATOR</a>,
 <a href=#72 id=72 data-nosnippet>72</a>								pattern:<span class="string">".ts"</span>.<a href="https://doc.rust-lang.org/nightly/alloc/string/trait.ToString.html#tymethod.to_string">to_string</a>(),
