@@ -117,8 +117,8 @@
 <a href=#117 id=117 data-nosnippet>117</a>}
 <a href=#118 id=118 data-nosnippet>118</a>
 <a href=#119 id=119 data-nosnippet>119</a><span class="doccomment">/// Format bundle as VSCode's nls.metadata.json format
-<a href=#120 id=120 data-nosnippet>120</a></span><span class="kw">pub fn </span><a href="../../../../Library/Fn/NLS/Bundle/fn.format_metadata.html">format_metadata</a>(bundle:<span class="kw-2">&amp;</span><a href="mod.rs.html#71-80">LocalizationBundle</a>) -&gt; serde_json::<a href="https://docs.rs/serde_json/1.0.149/serde_json/value/enum.Value.html">Value</a> {
-<a href=#121 id=121 data-nosnippet>121</a>	<span class="kw">let </span><span class="kw-2">mut </span>metadata = serde_json::<a href="https://docs.rs/serde_json/1.0.149/serde_json/map/struct.Map.html">Map</a>::<a href="https://docs.rs/serde_json/1.0.149/serde_json/map/struct.Map.html#method.new">new</a>();
+<a href=#120 id=120 data-nosnippet>120</a></span><span class="kw">pub fn </span><a href="../../../../Library/Fn/NLS/Bundle/fn.format_metadata.html">format_metadata</a>(bundle:<span class="kw-2">&amp;</span><a href="mod.rs.html#71-80">LocalizationBundle</a>) -&gt; serde_json::<a href="https://docs.rs/serde_json/1.0.150/serde_json/value/enum.Value.html">Value</a> {
+<a href=#121 id=121 data-nosnippet>121</a>	<span class="kw">let </span><span class="kw-2">mut </span>metadata = serde_json::<a href="https://docs.rs/serde_json/1.0.150/serde_json/map/struct.Map.html">Map</a>::<a href="https://docs.rs/serde_json/1.0.150/serde_json/map/struct.Map.html#method.new">new</a>();
 <a href=#122 id=122 data-nosnippet>122</a>
 <a href=#123 id=123 data-nosnippet>123</a>	<span class="kw">for </span>entry <span class="kw">in </span><span class="kw-2">&amp;</span>bundle.entries {
 <a href=#124 id=124 data-nosnippet>124</a>		<span class="kw">let </span><span class="kw-2">mut </span>item = serde_json::Map::new();
@@ -132,7 +132,7 @@
 <a href=#132 id=132 data-nosnippet>132</a>		metadata.insert(entry.key.clone(), serde_json::Value::Object(item));
 <a href=#133 id=133 data-nosnippet>133</a>	}
 <a href=#134 id=134 data-nosnippet>134</a>
-<a href=#135 id=135 data-nosnippet>135</a>	serde_json::Value::<a href="https://docs.rs/serde_json/1.0.149/serde_json/value/enum.Value.html#variant.Object">Object</a>(<a href="#121">metadata</a>)
+<a href=#135 id=135 data-nosnippet>135</a>	serde_json::Value::<a href="https://docs.rs/serde_json/1.0.150/serde_json/value/enum.Value.html#variant.Object">Object</a>(<a href="#121">metadata</a>)
 <a href=#136 id=136 data-nosnippet>136</a>}
 <a href=#137 id=137 data-nosnippet>137</a>
 <a href=#138 id=138 data-nosnippet>138</a><span class="attr">#[cfg(test)]
