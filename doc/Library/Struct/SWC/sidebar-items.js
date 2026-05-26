@@ -1,1 +1,0 @@
-window.SIDEBAR_ITEMS = {"enum":["ModuleFormat"],"struct":["CompilerConfig","CompilerMetrics","FileInfo","Option"]};

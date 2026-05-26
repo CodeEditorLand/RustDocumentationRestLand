@@ -1,1 +1,0 @@
-window.SIDEBAR_ITEMS = {"fn":["generate_inline_worker","generate_worker_declaration"],"struct":["WorkerBootstrap"]};
